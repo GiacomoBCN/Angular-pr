@@ -8,9 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular02';
   disable = false;
-  textoSaludar = "Este boston esta activado";
+  textoActivo = "clica aqui para activar";
   textoDisactivo = "Este botton no funciona ahora";
-  texstoActivar="activar botton saludo";
   disabled = false;
   disabledOff = true;
   botonVerde() {
@@ -19,17 +18,5 @@ export class AppComponent {
   }
 
 
-mostrarAviso(){
-alert('has pulsdo el boton');
-}
 
-activarSludo(){
-this.texstoActivar="este botton està habilitado",
-this.b
-
-}
-
-disactivarSaluo(){
-
-}
 }

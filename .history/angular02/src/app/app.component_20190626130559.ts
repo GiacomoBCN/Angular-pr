@@ -18,14 +18,12 @@ export class AppComponent {
 
   }
 
-
 mostrarAviso(){
-alert('has pulsdo el boton');
+
 }
 
 activarSludo(){
-this.texstoActivar="este botton està habilitado",
-this.b
+
 
 }
 
