@@ -1,0 +1,14 @@
+
+<h2 class="bg-warning">{{selectedHero.name | uppercase}} Details</h2>
+<div><span>id: </span>{{selectedHero.id}}</div>
+<div>
+  <label>name:
+    <input [(ngModel)]="selectedHero.name" placeholder="name"/>
+  </label>
+</div>
+<h2 class="bg-warning">My Heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+    <span class="badge">{{selectedHero.id}}</span> {{hero.name}}
+  </li>
+</ul>

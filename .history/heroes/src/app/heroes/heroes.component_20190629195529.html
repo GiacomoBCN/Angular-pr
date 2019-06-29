@@ -1,4 +1,4 @@
-<h2 class="bg-warning">My Heroes</h2>
+<h2>My Heroes</h2>
 <ul class="heroes">
   <li *ngFor="let hero of heroes"
     [class.selected]="hero === selectedHero"
@@ -9,7 +9,7 @@
 
 <div *ngIf="selectedHero">
 
-  <h2 class="bg-warning">{{selectedHero.name | uppercase}} Details</h2>
+  <h2 cla>{{selectedHero.name | uppercase}} Details</h2>
   <div><span>id: </span>{{selectedHero.id}}</div>
   <div>
     <label>name:
