@@ -1,0 +1,13 @@
+<h2 class="">My food </h2>
+
+<ul class="foods list-group ">
+  <li *ngFor="let food of foods"
+
+    [class.selected]="food === selectedFood"
+    (click)="onSelect(food)">
+    <img  width="150"src={{food.image}} />
+    <span class="badge">{{food.name}}</span>
+
+  </li>
+</ul>
+
