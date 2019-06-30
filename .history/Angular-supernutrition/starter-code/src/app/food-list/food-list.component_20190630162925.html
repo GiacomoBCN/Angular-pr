@@ -1,0 +1,47 @@
+<div class=" p-1 container">
+<div>
+
+  <h2 class=" p-2 bg-warning">{{titbusc}} </h2>
+<div class="form-group">
+<input type="text" class="form-controll" name="filterFood" placeholder="que quieres comer?" [(ngModel)]="filterFood">
+
+
+</div>
+</div>
+
+<div class=" p-5 d-flex justify-content-start">
+<div class=" ">
+<h2 class="bg-warning">My food </h2>
+<ul class="foods list-group ">
+  <li class=" list-unstyled" *ngFor="let food of foods | filter:filterFood"
+
+    [class.selected]="food === selectedFood"
+    (click)="onSelect(food)">
+    <img  width="150"src={{food.image}} />
+    <span class="badge">{{food.name}}</span>
+
+  </li>
+</ul>
+</div>
+
+<div class=" " *ngIf="selectedFood"></d
+
+  <h2 class="bg-warning"> Food Details: {{selectedFood.name}} </h2>
+  <!-- <div><span>id: </span>{{selectedFood.id}}</div>-->
+    <div>
+    <label>name:
+      <input [(ngModel)]="selectedFood.name" placeholder="name"/>
+    </label>
+    <br>
+    <label>calories:
+      <input [(ngModel)]="selectedFood.calories" placeholder="calories"/>
+    </label>
+   <br>
+   <label>quantity:
+    <input [(ngModel)]="selectedFood.quantity" placeholder="quantity"/>
+  </label>
+  </div>
+
+</div>
+</div>
+</div><!--Conteiner-->
