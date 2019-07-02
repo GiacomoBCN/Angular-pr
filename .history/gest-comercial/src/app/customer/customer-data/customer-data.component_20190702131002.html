@@ -1,0 +1,15 @@
+<p>{{identifier}}</p>
+
+<div class=" ">
+
+  <ul class=" list-group ">
+    <li class=" list-unstyled" *ngFor="let customer of customers" >
+
+  <a routerLink='../customer/{{customer._id}}'>{{customer.name}}</a>
+
+
+    </li>
+  </ul>
+  </div>
+
+

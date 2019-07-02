@@ -1,0 +1,30 @@
+<p>customer-list works!</p>
+<div>
+<a routerLink='../customer/10'>Cliente 10</a>
+</div>
+<div>
+<a routerLink='../customer/11'>Cliente 11</a>
+</div>
+
+
+<div class=" ">
+
+  <ul class=" list-group ">
+    <li class=" list-unstyled" *ngFor="let customer of customers" >
+
+<a routerLink='../customer/{{<ng-container *ngIf='selectedCustomer!=undefined; else nocustomerselected'>
+    <p>{{selectedCustomer.index}}</p>
+    <p>{{selectedCustomer.name}}</p>
+    <p>{{selectedCustomer.gender}}</p>
+    <p>{{selectedCustomer.company}}</p>
+    <p>{{selectedCustomer.email}}</p>
+    </ng-container>
+
+    <ng-template #nocustomerselected>
+      No hay cliente seleccionado
+    </ng-template>
+    <p> <a routerLink='../../customer'>Back</a></p>}'>Customer {{customer.nombre}}</a>
+
+    </li>
+  </ul>
+  </div>

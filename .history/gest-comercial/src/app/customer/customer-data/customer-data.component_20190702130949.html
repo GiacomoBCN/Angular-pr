@@ -1,0 +1,24 @@
+<p>{{identifier}}</p>
+
+<div class=" ">
+
+  <ul class=" list-group ">
+    <li class=" list-unstyled" *ngFor="" >
+
+  <a routerLink='../customer/{{customer._id}}'>{{customer.name}}</a>
+
+  <label>name:
+    <input [(ngModel)]="selectedFood.name" placeholder="name"/>
+  </label>
+  <br>
+  <label>calories:
+    <input [(ngModel)]="selectedFood.calories" placeholder="calories"/>
+  </label>
+ <br>
+ <label>quantity:
+  <input [(ngModel)]="selectedFood.quantity" placeholder="quantity"/>
+    </li>
+  </ul>
+  </div>
+
+

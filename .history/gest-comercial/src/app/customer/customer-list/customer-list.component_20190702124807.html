@@ -1,0 +1,20 @@
+<p>customer-list works!</p>
+<div>
+<a routerLink='../customer/10'>Cliente 10</a>
+</div>
+<div>
+<a routerLink='../customer/11'>Cliente 11</a>
+</div>
+
+
+<div class=" ">
+
+  <ul class=" list-group ">
+    <li class=" list-unstyled" *ngFor="let customer of customers" >
+
+<a routerLink='../customer/{{customer._id}}'>{{customer.}}</a>
+
+
+    </li>
+  </ul>
+  </div>

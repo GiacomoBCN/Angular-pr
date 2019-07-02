@@ -1,0 +1,14 @@
+<!--  <p>{{identifier}}</p>-->
+
+<div class=" "  *ngFor=" let cliente of  customers">
+
+  <div class=" list-group " *ngIf="identifier._id === cliente._id" >
+
+    <p  > {{identifier.name}} </p>
+    <p  > {{identifier.address}} </p>
+
+</div>
+  </div>
+
+<p><a  routerLink ="router-link-active" > back </a></p>
+

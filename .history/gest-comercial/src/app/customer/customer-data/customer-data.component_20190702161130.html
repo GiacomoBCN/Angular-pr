@@ -1,0 +1,14 @@
+<p>{{identifier}}</p>
+
+<div class=" " *ngFor="let customers of customer">
+
+  <div class=" list-group " *ngIf="identifier === customer._id" >
+<ng-container>
+    <p class=" list-unstyled" > {{customer.name}}</p>
+    <p class=" list-unstyled" >{{customer.address}}</p>
+</ng-container>
+</div>
+  </div>
+
+<p><a  routerLink ="router-link-active" > back </a></p>
+

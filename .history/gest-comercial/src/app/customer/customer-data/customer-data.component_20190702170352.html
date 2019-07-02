@@ -1,0 +1,17 @@
+<!--  <p>{{identifier}}</p>-->
+
+<ng-container *ngIf='selectedCustomer!=undefined; else nocustomerselected'>
+<ul>
+<li>{{selectedCustomer.index}}</li>
+  <p>{{selectedCustomer.index}}</p>
+    <p>{{selectedCustomer.name}}</p>
+    <p>{{selectedCustomer.gender}}</p>
+    <p>{{selectedCustomer.company}}</p>
+    <p>{{selectedCustomer.email}}</p>
+</ul>
+</ng-container>
+
+    <ng-template #nocustomerselected>
+      No hay cliente seleccionado
+    </ng-template>
+    <p> <a routerLink='../../customer'>Back</a></p>
