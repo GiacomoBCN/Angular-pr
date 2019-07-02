@@ -27,7 +27,7 @@ export class CommentsComponentComponent implements OnInit {
       formulario.reset();
   } */
 
-  saveComment(event: any, formulario: any): void {
+  saveComment(event: any, formulario: any):void{
     event.preventDefault();
 
     let comentario = {
