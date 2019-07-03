@@ -6,8 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form01.component.scss']
 })
 export class Form01Component implements OnInit {
+  nombreRecibido = '';
+  passRecibida = '';
+
+  placeholders = {
+    username: 'Teclea tu nombre de usuario',
+    userpass: 'Teclea tu contraseña'
+  };
 
   constructor() { }
+
+   recibirDatos(nombre, password) {
+     this.nombreRecibido = nombre.value;
+     this.passRecibida = password.value;
+   }
 
   ngOnInit() {
   }
